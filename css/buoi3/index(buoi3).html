@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: BUỔI 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style(buoi3).css">
+    <!-- transfrom | làm menu (fontawsome) -->
+</head>
+
+<body>
+    <!-- demo menu -->
+    <div class="nav-bg">
+        <!-- lớp ngoài cùng -->
+        <div class="container">
+            <!-- div để gò khung nội dung -->
+            <div class="nav">
+                <!-- nội dung -->
+                <div class="nav__logo">
+                    <div class="nav__logo">
+                        <a href="#">SPAC<span>DYNA</span></a>
+                    </div>
+                </div>
+
+                <!-- toggle btn -->
+                <input class="btn-toggle-menu" type="checkbox"/>
+                <div class="toggle-menu-icon">
+                    <span></span>
+                </div>
+
+                <div class="nav__menu">
+                    <ul class="nav-menu__list">
+                        <li class="nav-menu__item">
+                            <a href="#" class="nav-menu__link actived">Home</a>
+                        <li class="nav-menu__item">
+                            <a href="#" class="nav-menu__link">About Us</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="#" class="nav-menu__link">Services</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="#" class="nav-menu__link">Portfolio</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="#" class="nav-menu__link">Blog</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="#" class="nav-menu__link">Message Us</a>
+                        </li>
+                    </ul>
+
+                    <button class="btn-contact">Contact Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const listLi = document.querySelectorAll(".nav-menu__link");
+        listLi.forEach((item) => {
+            item.addEventListener("click", (event) => {
+                listLi.forEach((_item) => {
+                    _item.classList.remove("actived");
+                });
+                event.target.classList.add("actived");
+            });
+        });
+    </script>
+
+
+
+
+<div style="height: 100vh;"></div>
+
+    <!-- demo transform -->
+    <div class="demo__transform">
+        <div class="div__demo">
+            <p>div__demo</p>
+        </div>
+    </div>
+</body>
+
+</html>

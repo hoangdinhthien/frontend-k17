@@ -1,0 +1,47 @@
+.btn-demo{
+    color: brown;
+}
+
+.btn-demo1:visited{
+    color: black;
+}
+
+/* sờ vào */
+.btn-demo1:hover{
+    color: pink;
+}
+
+/* nhấn vào */
+.btn-demo1:active{
+    color: green;
+}
+
+.btn-demo2{
+    display: inline-block;
+    border: 2px solid teal;
+    text-decoration: none; 
+    /* xóa gạch chân của tag a */
+    padding: 5px 10px;
+    /* padding: trên trái phải dưới */
+    margin: 10px;
+    /* margin: trên trái phải dưới */
+    transition: 0.3s;
+    /* transition: thời gian chuyển */
+}
+
+.btn-demo2:hover{
+    color: pink;
+    background-color: teal;
+}
+
+/* MODEL BOX
+TỪ VIỀN VÀO CONTENT GỌI LÀ PADDING
+TỪ VIỀN SO VỚI BÊN NGOÀI GỌI LÀ MARGIN*/
+
+.img-demo1{
+    width: 100px;
+    height: 100px;
+    background-image: url(https://i.pinimg.com/originals/36/9e/8d/369e8d4d85906b27e49cfd75d5b21e8d.jpg);
+    background-size: cover;
+    background-position: center;
+}

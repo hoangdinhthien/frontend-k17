@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto Mono', monospace;;
+}
+
+body{
+    font-size: 1.6rem;
+}
+/* reset css */
+
+/* .side-banner{
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+/* flex */
+
+.div-cha{
+    height: 40rem;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+.div-con1{
+    height: 10rem;
+    width: 10rem;
+    border: 2px solid blueviolet;
+}
+
+.div-con2{
+    height: 10rem;
+    width: 10rem;
+    border: 2px solid green;
+}
+
+/* justify : trục ngang , row(chính)
+    align: trục dọc , column(phụ)
+    justify-items --> canh chỉnh phần tử 
+    justify-content: --> ko canh chỉnh phần tử, chia đều nội dung
+    flex-direction: chỉnh trục của cột, chọn góc 
+    flex-direction: row -> xoay trục
+    flex-direction: column -> xoay trục 
+*/
+
+
+/* demo flex */
+.chachu{
+    border: 3px solid grey;
+    display: flex;
+}
+
+.chau{
+    border: 3px solid brown;
+    width: 45rem;
+}
+
+.chac{
+    border: 3px solid violet;
+    width: calc(100vw - 30rem);
+}
+
+/* position */
+.div-bu{
+    display: block;
+    border: 3px solid red;
+    width: 30rem;
+    height: 30rem;
+    /* position: relative; */
+    /* position: fixed;
+    top: 3rem; */
+    /* position: sticky;
+    top: 0; */
+}
+
+.div-con{
+    background-color: aqua;
+    border: 3px solid blue;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+/* position: static; --> mặc định, đứng yên, k xê dịch */
+/* position: relative; --> sẽ xê dịch dựa trên chính nó ban đầu */
+/* position: absolute; --> sẽ xê dịch dựa trên thằng cha có position khác static gần nhất */
+
+/* pseudo class: :hover | :active | :focus | :unvisited | :visited */
+/* pseudo element: ::after | ::before */
+
+/* button */
+.btn-demo{
+    margin: 3rem;
+    padding: 1rem 2rem;
+    outline: none;
+    border:  none;
+    border:  1px solid violet;
+    color: violet;
+    background-color: transparent;
+    position: relative;
+    transition: 0.3s;
+}
+
+.btn-demo::after{
+    content: "";
+    position: absolute;
+    background-color: hotpink;
+    top: 0;
+    height: 100%;
+    right: 0;
+    width: 0;
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.btn-demo:hover::after{
+    left: 0;
+    width: 100%;
+}
+.btn-demo:hover{
+    color: white;
+}

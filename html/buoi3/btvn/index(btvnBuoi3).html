@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN BUỔI 3</title>
+    <link rel="stylesheet" href="./style(btvnBuoi3).css">
+</head>
+
+<body>
+    <h1 style="color: blue; text-align: center;">
+        Đăng ký du lịch
+    </h1>
+    <table class="table-btvnBuoi3">
+        <tr>
+            <td>Họ và tên</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Điện thoại</td>
+            <td>
+                <input type="number">
+            </td>
+        </tr>
+        <tr>
+            <td>Khách Việt Nam</td>
+            <td>
+                <input type="checkbox">
+            </td>
+        </tr>
+        <tr>
+            <td>Chọn tour</td>
+            <td>
+                <select name="tour" id="">
+                    <option value="Buôn Mê Thuộc - Gia Lai - Kontum">
+                        Buôn Mê Thuộc - Gia Lai - Kontum
+                    </option>
+                    <option value="Đà Lạt - Di Linh - Đồng Nai">
+                        Đà Lạt - Di Linh - Đồng Nai
+                    </option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Phương tiện</td>
+            <td>
+                <input type="radio" name="vehicle" value="plane" id="plane">
+                <label for="plane">Máy bay</label>
+                <input type="radio" name="vehicle" value="car" id="car">
+                <label for="car">Xe ô tô</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <fieldset>
+                    <legend style="text-align: center; color: red;">
+                        Số lượng đoàn khách
+                    </legend>
+                    <div style="text-align: center;">
+                        <label for="guest">
+                            Người lớn
+                        </label>
+                        <input type="number" name="guest" id="adult" class="guest-input-sub">
+                        <label for="guest">
+                            Trẻ em
+                        </label>
+                        <input type="number" name="guest" id="children" class="guest-input-sub">
+                    </div>
+                </fieldset>
+            </td>
+            <!-- <td>14</td> -->
+        </tr>
+        <tr>
+            <td>Ghi chú thêm</td>
+            <td>
+                <textarea name="" id="" cols="30" rows="10" style="min-width: 250px; max-width: 250px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Đồng ý">
+            </td>
+            <!-- <td>18</td> -->
+        </tr>
+        <tr>
+            <td colspan="2">Bạn đã đăng ký thành công</td>
+            <!-- <td>20</td> -->
+        </tr>
+    </table>
+</body>
+
+</html>

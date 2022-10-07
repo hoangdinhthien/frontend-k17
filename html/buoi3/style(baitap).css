@@ -1,0 +1,35 @@
+/* *{ --> reset tất cả các tag
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ */
+.table-baitap, .table-baitap td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table-baitap{
+    width: 100%;
+}
+
+.side-left{
+    width: 40%;
+}
+
+.side-right{
+    width: 60%;
+}
+
+/* img__block */
+.img__block{
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+}
+
+.img__block img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}

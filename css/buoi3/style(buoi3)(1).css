@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+/* transform: biến hình */
+.demo__transform{
+    height: 100vh;
+    border: 1px solid rebeccapurple;
+    position: relative;
+}
+
+.div__demo{
+    width: 10rem;
+    height: 5rem;
+    background-color: rosybrown;
+    border: 3px solid red;
+    transition: 0.3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+}
+
+.div__demo:hover{
+    /* 2d */
+    /* transform: translate(50%, 50%); */
+    /* transform: rotate(180deg); */
+    /* transform: scale(2, 3); */
+    /* transform: skew(45deg, 10deg); */
+    transform: matrix();
+    /* scaleX | skewX | scaleY | skewY | translateX | translateY*/
+
+    /* 3d */
+    transform: rotateY(180deg);
+
+}
+
+
+
+/* menu */
+.nav-bg{
+    height: 10rem;
+    /* border: 2px solid red; */
+    background-color: #fafafa;
+}
+
+.container{
+    /* border: 2px solid aqua; */
+    max-width: 1320px;
+    margin: 0 auto;
+    height: 10rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    align-items: center;
+}
+
+.nav__menu{
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu__list{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+/* làm logo */
+.nav__logo a {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #03a4ed;
+    letter-spacing: 2px;
+}
+
+.nav__logo span{
+    color: #fe3f40;
+}
+
+
+/* làm menu */
+.nav-menu__link{
+    padding: 0 2rem;
+    /* border: 2px solid red; */
+    text-decoration: none;
+    color: #2a2a2a;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.nav-menu__link:hover{
+    color: #fe3f40;
+    transition: 0.3s;
+}
+
+.btn-contact{
+    background-color: #fe3f40;
+    padding: 1rem 2rem;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.btn-contact:hover{
+    background-color: #03a4ed;
+    transition: 0.3s;
+}
+
+.actived{
+    color: #fe3f40;
+}
+
+/* repo */
+.btn-toggle-menu{
+    display: none;
+}
+@media(max-width: 875px){
+    .btn-contact{
+        display: none;
+    }
+    .nav{
+        justify-content: center;
+    }
+    .nav-menu__link{
+        padding: 0 1.2rem;
+    }
+}
+
+@media (max-width: 690px){
+    .btn-toggle-menu{
+        display: block;
+    }
+    .nav{
+        position: relative;
+        justify-content: space-between;
+    }
+    .nav__menu{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 100%;
+        z-index: 9999;
+        transition: 0.3s;
+        height: 0;
+        overflow: hidden;
+    }
+    .btn-toggle-menu:checked ~ .nav__menu{
+        height: 300%;
+        transition: 0.3s;
+    }
+    /* có dấu ~ --> ngang cấp
+        ko có dấu ~ --> con
+    */
+    .nav-menu__list{
+        display: block;
+        background-color: gray;
+    }
+    .nav-menu__item{
+        width: 40rem;
+        height: 5rem;
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-menu__item:hover{
+        background-color: #f2f2f2;
+    }
+    .btn-toggle-menu{
+        position: absolute;
+        right: 4rem;
+        width: 4rem;
+        height: 4rem;
+        opacity: 0;
+        z-index: 999;
+    }
+    .toggle-menu-icon{
+        position: absolute;
+        right: 4rem;
+        /* border: 2px solid red; */
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .toggle-menu-icon span{
+        display: block;
+        width: 100%;
+        background-color: black;
+        height: 3px;
+        transition: 0.3s;
+    }
+    .toggle-menu-icon span::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 80%;
+        height: 3px;
+        background-color: black;
+        transition: 0.3s;   
+    }
+    .toggle-menu-icon span::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 80%;
+        height: 3px;
+        background-color: black;
+        transition: 0.3s;   
+    }
+    .btn-toggle-menu:checked ~ .toggle-menu-icon span::before{
+        transform: rotate(45deg);
+        top: 50%;
+        left: -18%;
+        width: 140%;
+    }
+    .btn-toggle-menu:checked ~ .toggle-menu-icon span::after{
+        transform: rotate(-45deg);
+        bottom: 50%;
+        left: -18%;
+        width: 140%;
+    }
+    .btn-toggle-menu:checked ~ .toggle-menu-icon span{
+        width: 0;
+    }
+}

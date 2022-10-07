@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 2</title>
+    <style>
+        /* color
+            color: đổi màu chữ
+            background color: đổi màu nền  
+        */
+
+        /* các tag có 3 cách móc nối(select) chính là thông qua class| tagName | id */
+
+        /* thông qua tagName */
+        p{
+            color: violet;
+        }
+
+        /* select theo tag nhưng mà chọn thứ tự từ trên xuống (thẻ p thứ 2 tử trên xuống vô giữa) */
+        /* nth-child(2) thằng thứ 2 từ trên xuống */
+        p:nth-child(2){
+            text-align:  center;
+        }
+
+        /* class Name: với class cần có dấu . ở trước */
+        /* tạo 1 class */
+        .dacbiet{
+            color: blue !important;
+        }
+
+        .dacbiet2{
+            font-weight: 700; 
+            /* bold: đậm */
+            color: green;
+        }
+
+        /* select bằn id: # */
+        #tuilaid{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Quotations: trích dẫn -->
+    <p id="tuilaid" class="dacbiet2">"ăn quả nhớ kẻ trồng cây"</p>
+    <p class="dacbiet dacbiet2">có ông nọ nói rằng:<q>ăn quả nhớ kẻ trồng cây</q></p>
+    <!-- thằng quotation là inline
+cặp nháy đôi không focus được -->
+
+    <!-- blockquote -->
+    <!-- <blockquote cite="https://www.google.com">xin chào các bạn mình là blockquote</blockquote> -->
+
+    <!-- abbr: inline -->
+    <p>tôi biết
+        <abbr title="Lê Hồ Điệp">ai</abbr>
+        là người đẹp trai nhất hành tinh
+    </p>
+
+    <!-- address: block : dùng để lưu những địa chỉ (ít dùng)-->
+    <p style="font-style: italic;">115/13 Đình Phong Phú</p>
+    <address>115/13 Đình Phong Phú</address>
+
+    <!-- cite: inline: in nghiêng (cùi) -->
+    <p><cite class="dacbiet">Sáng tác bởi</cite> Xuân Diệu in 1983</p>
+
+    <!-- bdo: lật chữ: inline -->
+    <bdo dir="rtl">xin chào các bạn</bdo>
+
+
+</body>
+
+</html>

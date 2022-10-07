@@ -1,0 +1,14 @@
+.table-btvnBuoi2,
+.table-btvnBuoi2 tr,
+.table-btvnBuoi2 td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 2% 1% 1% 2%;
+    /* trên trái phải dưới  */
+    margin: 0 auto;
+    /* margin: 0 auto; 
+            0: trục dọc
+            auto: trục ngang (trái + phải = full width)*/
+
+}

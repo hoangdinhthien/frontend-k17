@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body{
+    font-size: 1.6rem;
+}
+/* reset css */
+
+/* .side-banner{
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.container{
+    height: 50rem;
+    width: 75rem;
+}
+
+.menu-bar{
+    height: 4rem;
+    width: 75rem;
+    padding-top: 10px;
+}
+
+.menu-item__list{
+    float: left ;
+}
+
+.footer-bar{
+    height: 4rem;
+    width: 75rem;
+    padding-top: 10px;
+}
+
+.content-left{
+    float: left;
+    height: 100%;
+    width: 75%;
+}
+
+.content-right{
+    float: left;
+    height: 100%;
+    width: 25%;
+}

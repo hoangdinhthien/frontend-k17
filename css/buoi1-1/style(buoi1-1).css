@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+html{
+    /* 10px */
+    font-family: sans-serif;
+    font-size: 62.5%; 
+    /* mặc định: 100% = 16px */
+}
+
+body{
+    font-size: 1.6rem;
+    
+}
+/* RESET CSS */
+/* unique size
+ĐƠN VỊ ĐO: px/mm/cm
+%: LÀ DỰA TRÊN THẰNG CHA
+em: COI FONT-SIZE CỦA THẰNG CHA LÀ 1 ĐƠN VỊ
+rem: COI FONT-SIZE CỦA HTML LÀ 1 ĐƠN VỊ 
+TRONG FRONTEND: NGƯỜI TA RẤT ÍT DÙNG px / NG TA DÙNG rem VÀ %
+*/
+
+/* OUTLINE :demo-ipt 
+outline-style:
+outline-color:
+outline-width:
+shorthand: outline: with style color
+outline-offset: KHOẢNG CÁCH TỪ OUTLINE ĐẾN BORDER 
+*/
+.demo-ipt{
+    margin: 3rem;
+    border: 1px solid red;
+    outline: none;
+    outline: 1px solid blueviolet; 
+    /* đưuòng viền ngoài border */
+    outline-offset: 2rem;
+}
+
+/* 
+border-style: 
+border-color:
+border-width:
+*/
+.demo-border{
+    border: 0.2rem solid teal;
+    border-top:0.2rem solid teal;
+    border-left:0.2rem solid rebeccapurple;
+    border-right:0.2rem solid rosybrown;
+    border-bottom:0.2rem solid skyblue;
+    border-radius: 0.2rem;
+}
+
+.demo-circle{
+    margin: 2rem;
+    border: 0.5rem solid black;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border-top:0.5rem solid teal;
+    border-left:0.5rem solid rebeccapurple;
+    border-right:0.5rem solid rosybrown;
+    border-bottom:0.5rem solid skyblue;
+    transition: 1s;
+}
+
+.demo-circle:hover{
+    transform: rotate(360deg);
+
+}
+
+.demo-text{
+    color: steelblue;
+    background-color: violet;
+    font-size: 2rem;
+    /* unicode-bidi: bidi-override; */
+    /* text-decoration: where style color; */
+    /* where: overline/ line-through / underline */
+    /* style: solid/ dotted / dashed */
+    text-decoration: underline solid chartreuse;
+    text-transform: capitalize;
+    text-indent: 5rem;
+    /* text-indent: thụt đầu dòng */
+    /* letter-spacing: 1rem;  --> khoảng cách chữ*/
+    /* word-spacing: 1rem; --> khoảng cách từ*/
+    /* line-height: 3rem; */
+    /* white-space: pre; */
+    text-shadow: -1px -1px black;
+    box-shadow: 4px 3px black;
+}
+
+.demo-text img{
+    vertical-align: baseline;
+    /* baseline/ middle / sub / super */
+}
+
+
+
+
+
+
+
+

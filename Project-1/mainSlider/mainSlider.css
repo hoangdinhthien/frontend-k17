@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+} 
+/* reset  css */
+
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container-slider{
+    max-width: 1320px;
+    padding: 0 0.5rem;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    height: 600px;
+}
+
+.mainSlider{
+    display: flex;
+    margin: 0 auto;
+    max-width: calc(85.13% * 1320px);
+    height: 600px;
+}
+
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.sliderLeftTop {
+    width: 70%;
+    height: 25%;
+}
+
+.sliderLeftTop div::before, .sliderRightBott div::before{
+    content: "";
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+    transition: 5s;
+}
+
+.sliderLeftTop div:hover::before, .sliderRightBott div:hover::before{
+    display: block;
+
+}
+
+.sliderLeftTop, .sliderRightBott{
+    width: 18.7%;
+    height: 100%;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+
+
+.sliderLeftTop div, .sliderRightBott div{
+    width: 100%;
+    height: 25%;
+    padding-bottom: 1px;
+    position: relative;
+}
+
+.sliderLeftTop img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.sliderMid {
+    width: calc(100% - 37.4%);
+    height: 100%;
+}
+
+.splide__track, .splide__list, .splide__slide{
+    width: 100%;
+    height: 100%;
+}
+
+.sliderMid img{
+    display: block;
+    /* background-size: cover; */
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.sliderRightBott img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-size: cover; */
+}
+
+.img-content{
+    display: block;
+}
+
+.carousel-item__block{
+    /* background-color: #2a2a2a; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 783px) {
+    .mainSlider{
+        display: block;
+    }
+    .sliderLeftTop{
+        display: flex;
+        width: 100%;
+        height: 15%;
+        padding: 5px 0px;
+    }
+    .sliderLeftTop div, .sliderRightBott div {
+        width: 25%;
+        height: 100%;
+    }
+    .sliderLeftTop div:not(:last-child), .sliderRightBott div:not(:last-child){
+        padding-right: 5px;
+    }
+    .sliderRightBott{
+        display: flex;
+        width: 100%;
+        height: 15%;
+        padding: 5px 0px;
+    }
+    .sliderMid{
+        height: auto;
+        width: 100%;
+    }
+}

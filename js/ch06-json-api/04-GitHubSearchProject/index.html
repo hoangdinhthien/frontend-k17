@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>04-GitHubSearchProject</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">GitHub Search</a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" id="username">
+                <button class="btn btn-outline-success">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- thông báo  -->
+    <div id="notification"></div>
+
+    <!-- main -->
+    <main class="mb-3">
+        <!-- tag main y chang div -->
+        <div class="container">
+            <div class="row">
+                <!-- bên trái nè  -->
+                <div class="col-4">
+                    <figure>
+                        <!-- figure tag: dùng để chứa hình -->
+                        <img src="" style="
+                            width: 150px; 
+                            height: 150px; 
+                            object-fit: cover;" />
+                    </figure>
+
+                    <!-- username -->
+                    <h1 class="fs-3">
+                        dinhthienhoang
+                    </h1>
+
+                    <!-- bio -->
+                    <p>
+                        I am Hoang
+                    </p>
+
+                    <!-- viewProfile -->
+                    <a href="" target="_blank" class="btn btn-primary">
+                        <!-- target: mở tab khác -->
+                        View profile
+                    </a>
+                    <div class="mb-3">
+                        <span class="badge bg-primary">Following: 1</span>
+                        <span class="badge bg-info">Repository: 1</span>
+                        <span class="badge bg-success">Follower: 1</span>
+                    </div>
+
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            Website: <a href="" target="_blank">Link Web</a>
+                        </li>
+                        <li class="list-group-item">
+                            Location: HCM
+                        </li>
+                        <li class="list-group-item">
+                            CreateAT: Today
+                        </li>
+                        <li class="list-group-item">
+                            Twitter: Chú bé đần
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- bên phải nè  -->
+                <div class="col-8">
+                    <h2>Repository</h2>
+                    <div class="card p-2 mb-3">
+                        <a href="" class="mb-3 fs-4">Repo name</a>
+                        <p class="mb-3">Repo này tạo chơi thôi (descriptions)</p>
+                    </div>
+                    <div class="mb-3">
+                        <span class="badge bg-primary">Language</span>
+                        <span class="badge bg-info">Star</span>
+                        <span class="badge bg-success">Fork</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer ne -->
+    <footer class="bg-light">
+        <div class="container mb-3 text-center">
+            GitHub &copy;
+        </div>
+    </footer>
+</body>
+
+</html>
